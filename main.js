@@ -7,7 +7,8 @@ function openMessage(){
     const msgBox = document.getElementById("message");
     msgBox.style.bottom = "0";
     
-    comment.play();
+    notif.play();
+    setTimeout(() => { comment.play(); }, 1000);
 
 
     setTimeout(() => { msgBox.style.bottom = "-50%"; }, 30000);
